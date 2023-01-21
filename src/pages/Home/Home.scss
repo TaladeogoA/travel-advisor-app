@@ -1,0 +1,17 @@
+.Home__grid {
+  display: grid;
+  height: calc(100vh - 60px);
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "places map map"
+    "places map map";
+
+  > :first-child {
+    grid-area: places;
+  }
+
+  > :nth-child(2) {
+    grid-area: map;
+  }
+}

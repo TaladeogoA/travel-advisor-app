@@ -1,0 +1,35 @@
+.places-list__section {
+  padding: 0 1rem;
+  height: calc(100vh - 65px);
+  overflow: hidden;
+
+  .places-list__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    height: 10%;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0;
+      padding: 0.5rem 0;
+    }
+  }
+
+  .places-list__items {
+    overflow-y: auto;
+    height: 85%;
+
+    .places-list__card {
+      padding: 0.5rem 0;
+
+      img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
